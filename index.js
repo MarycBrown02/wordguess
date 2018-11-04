@@ -12,7 +12,7 @@ console.log(
 );
 console.log("\n");
 console.log("\n");
-console.log("GREEK GODS HANGMAN! Can you guess correctly?");
+console.log("can you guess the corect theater term?");
 console.log("\n");
 console.log("\n");
 console.log(
@@ -64,7 +64,7 @@ var hangman = {
 
         // wrong guess
         if (guessResult === 0) {
-          console.log("May Tyche favor your next guess!!");
+          console.log("Sorry you have to go back to intro to theater!!");
           referred.guessesLeft -= 1;
         } else if (guessResult !== 0) {
           console.log("Woot!");
@@ -78,8 +78,8 @@ var hangman = {
             );
             console.log("\n");
             console.log("Answer: " + referred.wordChosen.word);
-            console.log("Whoa! Are you a Decedant of Homer?");
-            console.log("Can you guess the next one?!");
+            console.log("wow! you are a theater expert.");
+            console.log("Can you guess the next term?!");
             console.log("\n");
             console.log(
               "-------------------------------------------------------------------"
@@ -111,9 +111,9 @@ var hangman = {
         } else if (referred.guessesLeft === 0) {
           console.log("\n");
           console.log(
-            "Athena favors you, the word was: '" +
+            "that is ok theater is not for everyone: '" +
               referred.wordChosen.word +
-              "'. Next time!"
+              "'. is the term!"
           );
           console.log("\n");
           console.log(
